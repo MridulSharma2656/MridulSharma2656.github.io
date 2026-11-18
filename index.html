@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101210">
+  <meta name="description" content="Explore Mridul Sharma’s Java projects, interactive text pattern generator, and experience supporting Python students at the University of the Fraser Valley.">
+  <title>Mridul Sharma — Computing Science Portfolio</title>
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="patterns.js" defer></script>
+  <script src="studio.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip" href="#projects">Skip to projects</a>
+  <header class="mast">
+    <div class="wrap topbar">
+      <a class="brand" href="#top" aria-label="Mridul Sharma, home"><span class="mark" aria-hidden="true">m<span>s</span></span><span>Mridul Sharma</span></a>
+      <nav class="topnav" aria-label="Primary"><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#about">About</a></nav>
+      <a class="contact-button" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="hero" aria-labelledby="intro">
+      <div>
+        <p class="availability"><i></i> Open to tech co-op</p>
+        <h1 id="intro">Mridul<br>Sharma<span>.</span></h1>
+        <p class="intro">I’m a Computing Science student at UFV. I build Java console tools and help students untangle Python bugs in the lab.</p>
+        <p class="location"><span class="pin" aria-hidden="true"></span> Abbotsford, BC</p>
+        <div class="actions">
+          <a class="button primary" href="#projects">Explore projects <span aria-hidden="true">↓</span></a>
+          <a class="button" href="assets/Mridul_Sharma_Resume_CECE_COOP.pdf" download>Resume <span aria-hidden="true">↓</span></a>
+          <a class="textlink" href="https://github.com/MridulSharma2656">GitHub <span aria-hidden="true">↗</span></a> <a class="textlink" href="https://www.linkedin.com/in/mridul-sharma-767678321/">LinkedIn <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <figure class="terminal">
+        <figcaption><span class="terminal-glyph" aria-hidden="true">›_</span> studio.terminal <span class="lights" aria-hidden="true">● ● ●</span></figcaption>
+        <div class="hardware"><img src="assets/studio-terminal.png" width="680" height="576" alt="Pixel-art desktop computer with MS glowing on its screen.">
+          <span class="registration tl" aria-hidden="true">+</span><span class="registration br" aria-hidden="true">+</span>
+        </div>
+        <a class="terminal-footer" href="#playground"><span><b aria-hidden="true">›</b> run pattern_generator</span><span aria-hidden="true">↗</span></a>
+      </figure>
+    </section>
+    <div class="workspace">
+      <aside class="rail">
+        <div class="pinned">
+          <div class="rail-title"><span class="tiny-mark" aria-hidden="true">⌘</span> Workspace</div>
+          <nav aria-label="Workspace sections">
+            <a href="#projects" aria-current="location">Projects</a>
+            <a href="#playground">Pattern lab</a>
+            <a href="#experience">Experience</a>
+            <a href="#leadership">Leadership</a>
+            <a href="#about">About &amp; skills</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <p class="rail-credit">Mridul Sharma<br><span>Computing Science · UFV</span></p>
+        </div>
+      </aside>
+      <div class="content">
+        <section class="module first" id="projects">
+          <div class="section-head"><h2>Selected projects<span>.</span></h2><a class="caption-link" href="https://github.com/MridulSharma2656/ProjectsJava">Repository <span aria-hidden="true">↗</span></a></div>
+          <div class="cards">
+            <article class="card hospital">
+              <div class="thumbnail"><img src="assets/hospital.png" width="480" height="291" alt="" loading="lazy"><span>HospitalManagement.java</span></div>
+              <div class="card-body"><p class="card-meta">Java · ArrayList <span>Nov 2025</span></p>
+                <h3>Hospital Management System</h3><p>Register patients and doctors, then book an appointment from a console menu.</p>
+                <details><summary>Case study</summary><p>Patient, Doctor, and Appointment classes keep the records separate. Before saving a booking to an ArrayList, the program looks up both IDs and asks for valid records if either is missing.</p></details>
+                <a class="source-link" aria-label="View source for Hospital Management System" href="https://github.com/MridulSharma2656/ProjectsJava/blob/main/HospitalManagement.java">View source ↗</a>
+              </div>
+            </article>
+            <article class="card banking">
+              <div class="thumbnail"><img src="assets/banking.png" width="480" height="291" alt="" loading="lazy"><span>BankMain.java</span></div>
+              <div class="card-body"><p class="card-meta">Java · OOP <span>Mar 2026</span></p>
+                <h3>Banking Application Prototype</h3><p>Create, look up, and close accounts in a menu-driven banking prototype.</p>
+                <details><summary>Case study</summary><p>Account and Balance objects share an account number across two in-memory lists. Looking up an account uses that number to find its balance. Closing one removes both records.</p></details>
+                <a class="source-link" aria-label="View source for Banking Application Prototype" href="https://github.com/MridulSharma2656/ProjectsJava/blob/main/BankMain.java">View source ↗</a>
+              </div>
+            </article>
+            <article class="card pattern">
+              <div class="thumbnail"><img src="assets/pattern.png" width="480" height="291" alt="" loading="lazy"><span>PatternPrintAny.java</span></div>
+              <div class="card-body"><p class="card-meta">Java · String processing <span>Jan 2025</span></p>
+                <h3>Text Pattern Generator</h3><p>Turn letters and digits into multi-line star patterns in the terminal.</p>
+                <details><summary>Case study</summary><p>The program converts input to uppercase and splits it into words. For each word, it prints one row of every character before moving to the next row, keeping adjacent letters aligned.</p></details>
+                <a class="source-link" aria-label="View source for Text Pattern Generator" href="https://github.com/MridulSharma2656/ProjectsJava/blob/main/PatternPrintAny.java">View source ↗</a>
+              </div>
+            </article>
+            <article class="card guessing">
+              <div class="thumbnail"><img src="assets/guessing.png" width="480" height="291" alt="" loading="lazy"><span>MyGuesserGame.java</span></div>
+              <div class="card-body"><p class="card-meta">Java · OOP <span>Nov 2024</span></p>
+                <h3>Multiplayer Number Guessing Game</h3><p>Three players try to match a number chosen by a designated guesser.</p>
+                <details><summary>Case study</summary><p>Guesser and Player collect the inputs. Umpire compares all three guesses with the target and reports an individual win, a shared win, or a round with no winners.</p></details>
+                <a class="source-link" aria-label="View source for Multiplayer Number Guessing Game" href="https://github.com/MridulSharma2656/ProjectsJava/blob/main/MyGuesserGame.java">View source ↗</a>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="module" id="playground">
+          <h2>Pattern lab<span>.</span></h2>
+          <p class="lede">Try the web adaptation of my Java Text Pattern Generator. Each character becomes five rows of stars.</p>
+          <form id="generator">
+            <label for="pattern-input">Text to render</label>
+            <div class="input-row"><input id="pattern-input" type="text" value="UFV" maxlength="32" aria-describedby="input-help" autocomplete="off" spellcheck="false" required><button class="button primary" type="submit">Generate <span aria-hidden="true">↵</span></button></div>
+            <small id="input-help">Use A–Z, 0–9, and spaces. Up to 32 characters.</small>
+            <div class="output-frame"><div class="output-bar"><span>›_ &nbsp; Output</span><span id="rendered-label">UFV</span></div><pre id="pattern-output" tabindex="0" aria-label="Star pattern for UFV">*   *   *****   *   *
+*   *   *       *   *
+*   *   *****   *   *
+*   *   *        * *
+ ***    *         *  </pre></div>
+            <span id="pattern-status" class="status" role="status"></span>
+            <noscript>Enable JavaScript to generate a new pattern.</noscript>
+          </form>
+        </section>
+        <section class="module" id="experience">
+          <h2>Work experience<span>.</span></h2>
+          <div class="timeline">
+            <article><p class="date">September 2026 – present</p><h3>Lab Monitor</h3><p class="org">UFV School of Computing</p><p>I help COMP 150 students trace Python programs line by line. We work through syntax and logic errors together so they can apply the same steps to the next exercise.</p></article>
+            <article><p class="date">September 2026 – present</p><h3>Marketing Manager</h3><p class="org">Integral Security</p><p>I explain security services through LinkedIn and Instagram posts. I write captions, design branded graphics in Canva, and revise the copy and visuals with stakeholder feedback.</p></article>
+            <article><p class="date">May 2025 – present</p><h3>Personal Shopper</h3><p class="org">Real Canadian Superstore</p><p>In PC Express, I troubleshoot the monitors, iPhones, and printers our team uses to fill online orders. When equipment interrupts the workflow, I coordinate a backup plan with colleagues and keep customers informed about their pickups.</p></article>
+          </div>
+        </section>
+        <section class="module" id="leadership">
+          <h2>Leadership &amp; volunteering<span>.</span></h2>
+          <div class="timeline">
+            <article><p class="date">May 2025 – present</p><h3>Computing Student Association executive</h3><p class="org">University of the Fraser Valley</p>
+              <p>I joined the executive team as secretary and went on to become president. I coordinate technical workshops and programming competitions with students and faculty and represent computing students at UFV’s Business and Computing Faculty Council.</p>
+              <p>I helped organize UFV’s Interdisciplinary Cybersecurity Hackathon, where students from different disciplines worked together to investigate security incidents.</p>
+              <p class="actions"><a class="source-link" href="https://csa.ufv.ca/history">CSA election history ↗</a> <a class="source-link" href="https://www.linkedin.com/posts/mandeep-pannu-7ab64446_cybersecurity-ufv-ieeevancouversection-activity-7442930238621298688-kZxd">Hackathon recap ↗</a></p></article>
+            <article><p class="date">May &amp; September 2025</p><h3>Orientation Ambassador</h3><p class="org">UFV Student Engagement Office</p><p>I welcomed new students, led campus tours, and helped students find the people and services they needed.</p></article>
+            <article><p class="date">March 2025</p><h3>Career Fair Volunteer</h3><p class="org">UFV Centre for Experiential and Career Education</p><p>I helped the event team plan the fair, register students, and coordinate activities on the day.</p></article>
+          </div>
+        </section>
+        <section class="module" id="about">
+          <h2>About &amp; skills<span>.</span></h2>
+          <p class="lede">In the Python lab, I help students follow a program one line at a time. I like that same small-step approach in my own projects, whether I’m following an account number through a menu or turning a letter into stars.</p>
+          <div class="education"><p class="date">January 2025 – present</p><h3>BSc, Computing Science major</h3><p>University of the Fraser Valley · Abbotsford, BC</p><p class="honours"><b>3.76</b> cumulative GPA <span>·</span> Dean’s List, Winter 2025 &amp; Fall 2025</p></div>
+          <h3 class="skills-title">Technical skills</h3>
+          <dl class="skills">
+            <dt>Languages</dt><dd>Java, Python, C++, R</dd>
+            <dt>Core concepts</dt><dd>Object-oriented programming, data structures and algorithms, debugging</dd>
+            <dt>Databases</dt><dd>Database management systems (DBMS), MySQL</dd>
+            <dt>Tools</dt><dd>Git, GitHub, IntelliJ IDEA, Eclipse, VS Code, RStudio</dd>
+          </dl>
+        </section>
+        <section class="module" id="contact">
+          <p class="availability"><i></i> Open to tech co-op</p>
+          <h2>Get in touch<span>.</span></h2>
+          <p class="lede">Have a co-op opening? I’d love to hear what your team is building.</p>
+          <a class="email" href="mailto:mridul.sharma@student.ufv.ca">mridul.sharma@student.ufv.ca <span aria-hidden="true">↗</span></a>
+          <div class="actions"><a class="button" href="assets/Mridul_Sharma_Resume_CECE_COOP.pdf" download>Download resume <span aria-hidden="true">↓</span></a><a class="textlink" href="https://github.com/MridulSharma2656">GitHub <span aria-hidden="true">↗</span></a> <a class="textlink" href="https://www.linkedin.com/in/mridul-sharma-767678321/">LinkedIn <span aria-hidden="true">↗</span></a></div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer><div class="wrap"><span>© 2026 Mridul Sharma</span><a href="#top">Back to top ↑</a></div></footer>
+</body>
+</html>
